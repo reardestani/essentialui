@@ -2,6 +2,20 @@
 layout: default
 ---
 
-<div class="home">
-
-</div>
+<main class="home" role="primary">
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts %}
+        <div class="col-sm-4">
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="thumbnail">
+            <img src="img/thumbnail.png" alt="...">
+            <div class="caption">
+            <h4 class="thumbnail-title">{{ post.title | xml_escape }}</h4>
+            <p class="thumbnail-subtitle">{{ post.subtitle | xml_escape }}</p>
+          </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main> <!-- /.home -->

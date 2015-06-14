@@ -1,9 +1,9 @@
 # Site settings
 title: Essential UI
 email: your-email@domain.com
-description: Essential UI is a collection of HTML, CSS and JavaScript UI for day-to-day development.
+description: Essential day-to-day UI
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://essentialui.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 

@@ -48,6 +48,10 @@
     font-size: 28px;
     margin-top: 30px;
 
+    @media (max-width: $screen-sm) {
+      font-size: 26px;
+    }
+
     a {
       color: #333;
 
@@ -64,6 +68,11 @@
     color: $gray-light;
     font-weight: normal;
     line-height: 1.5;
+
+    @media (max-width: $screen-sm) {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 
   .btn-join {
@@ -238,6 +247,57 @@
 // --------------------------------------------------
   .site-footer {
     margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     background-color: #FFF;
     border-top: 1px solid $gray-lighter;
+    
+    ul {
+      li {
+        padding: 5px 0;
+      }
+    }
+
+    a {
+      color: #777;
+      font-size: 14px
+    }
+    
+    @media ( max-width: $screen-sm ) {
+      .row {
+        > div {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  } //.site-footer
+
+  .form-control.email {
+    height: 40px;
+    min-width: 240px;
+    border-width: 2px;
+    
+    @media ( max-width: $screen-md ) {
+      min-width: 200px
+    }
+
+    &:focus {
+      @include box-shadow(0 0 0 );
+    }
+
+  }
+
+  .btn-subscribe {
+    color: #FFF;
+    background-color: $eui-red;
+    border-width: 0;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
   }

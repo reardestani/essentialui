@@ -4,11 +4,11 @@ layout: default
 <div class="container">
   <div class="col-sm-8 post">
     <main role="primary">
-      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 5" class="img-thumbnail">
+      <img src="{{ site.url }}/img/{{ page.slug }}/preview-1.png" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
+      <img src="{{ site.url }}/img/{{ page.slug }}/preview-2.png" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
+      <img src="{{ site.url }}/img/{{ page.slug }}/preview-3.png" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
+      <img src="{{ site.url }}/img/{{ page.slug }}/preview-4.png" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
+      <img src="{{ site.url }}/img/{{ page.slug }}/preview-5.png" alt="{{ page.title }} thumbnail 5" class="img-thumbnail">
     </main>
   </div>
   <div class="col-sm-4 post-aside">
@@ -20,8 +20,10 @@ layout: default
         <li><a href="https://gum.co/eesential-ui" target="_blank">Download all &rarr;</a></li>
         <li><a href="#">Download this freebie &darr;</a></li>
       </ul>
-      <h2>Statistics</h2>
+      <h2>Info</h2>
       <ul>
+        <li>{{ page.date | date: "%b %-d, %Y" }} crafted</li>
+        <li>{{ page.update | date: "%b %-d, %Y" }} updated</li>
         <li>1200 views</li>
       </ul>
     </aside>

@@ -7,8 +7,8 @@ layout: default
     <div class="row">
       {% for post in site.posts %}
         <div class="col-sm-4">
-          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="thumbnail">
-            <img src="img/thumbnail.png" alt="...">
+          <a href="{{ post.url | prepend: site.url }}" class="thumbnail">
+            <img src="{{ site.url }}/img/{{ post.slug }}/thumbnail.png" alt="post">
             <div class="caption">
             <h4 class="thumbnail-title">{{ post.title | xml_escape }}</h4>
             <p class="thumbnail-subtitle">{{ post.subtitle | xml_escape }}</p>

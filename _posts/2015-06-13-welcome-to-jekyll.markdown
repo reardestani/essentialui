@@ -2,8 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 slug: "welcome-to-jekyll"
-subtitle: "You’ll find this post in your more in posts here"
+subtitle: "You’ll find this post in your more in posts "
 date:   2015-06-15 12:14:00
+update: 2015-06-20 12:14:00
 category: freebies
 tags: html, css, flat, minimal, bootstrap, less, modern
 ---

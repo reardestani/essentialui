@@ -21,11 +21,11 @@
   }
 
   a {
-    color: $eui-green;
+    color: #333;
 
     &:hover,
     &:focus {
-      color: $eui-green;
+      color: #333;
     }
   }
 
@@ -75,7 +75,7 @@
     }
   }
 
-  .btn-join {
+  a.btn-join {
     position: relative;
     background-color: #52D39D;
     color: #FFF;
@@ -110,7 +110,7 @@
         margin-bottom: 0;
       }
 
-      .btn-join {
+      a.btn-join {
         background-color: #FFF;
         color: $eui-red;
         font-weight: 500;
@@ -182,38 +182,35 @@
 
     .post-aside {
       padding-top: 13px;
+      padding-bottom: 20px;
+      padding-left: 20px;
 
       @media ( min-width: $screen-sm ) {
         border-left: 1px solid $gray-lighter;
-      }
-    }
-
-    .widget {
-      border-bottom: 1px solid $gray-lighter;
-      padding-bottom: 20px;
-
-      @media ( min-width: $screen-sm ) {
-        margin-left: -15px;
-        padding-left: 25px;
+        padding-left: 20px;
       }
 
-      .widget-title {
+      h1 {
         font-size: 20px;
         margin-bottom: 15px
       }
 
-      .btn-preview {
-        background-color: $eui-red;
-        border-radius: 3px;
-        color: #FFF;
-        padding: 10px 30px;
-        font-weight: 500; 
-        margin-top: 10px;    
+      h2 {
+        margin-bottom: 25px;
+        margin-left: -20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #EEE;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #BDBCBC;
       }
 
       ul {
         position: relative;
         padding-left: 19px;
+        margin-bottom: 30px;
 
         &:before {
           content: '';
@@ -240,6 +237,8 @@
           }
         }
       }
+
+
     }
 
 //

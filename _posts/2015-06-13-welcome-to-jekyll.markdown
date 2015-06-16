@@ -1,9 +1,17 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-subtitle: You’ll find this post in your more in posts here
-date:   2015-06-13 13:00:20
-category: freebie
+slug: "welcome-to-jekyll"
+subtitle: "You’ll find this post in your more in posts here"
+date:   2015-06-15 12:14:00
+category: freebies
+tags: html, css, flat, minimal, bootstrap, less, modern
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`.
+
+## Features
+
++ Includes 120+ elements
++ HTML, CSS files
++ Bootstrap framework
 

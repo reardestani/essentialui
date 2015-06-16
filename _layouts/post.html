@@ -3,36 +3,27 @@ layout: default
 ---
 <div class="container">
   <div class="col-sm-8 post">
-    <main>
-      <img src="{{ site.baseurl }}/img/full.png" alt="..." class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="..." class="img-thumbnail">
-      <img src="{{ site.baseurl }}/img/full.png" alt="..." class="img-thumbnail">
+    <main role="primary">
+      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
+      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
+      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
+      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
+      <img src="{{ site.baseurl }}/img/full.png" alt="{{ page.title }} thumbnail 5" class="img-thumbnail">
     </main>
   </div>
   <div class="col-sm-4 post-aside">
-    <aside>
-      <div class="widget">
-        <h2 class="widget-title">Welcome to jekyll and similiar sites</h2>
-        <p class="widget-content">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run </p>
-        <a class="btn btn-preview" href="">Live preview</a>
-      </div>
-      <div class="widget">
-        <h2 class="widget-title">Features</h2>
-        <ul>
-          <li>Includes amny kld sdkj ;sdlk ;dslkf ;dlkf  </li>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-        </ul>
-        <hr>
-        <ul>
-          <li>Includes amny </li>
-          <li>Includes amny </li>
-        </ul>
-      </div>
+    <aside rolw="complementary">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+      <h2>Downloads</h2>
+      <ul>
+        <li><a href="https://gum.co/eesential-ui" target="_blank">Download all &rarr;</a></li>
+        <li><a href="#">Download this freebie &darr;</a></li>
+      </ul>
+      <h2>Statistics</h2>
+      <ul>
+        <li>1200 views</li>
+      </ul>
     </aside>
   </div>
 </div>

@@ -1,13 +1,22 @@
 <header class="site-header" role="banner">
   <div class="call-to-tweet">
     <div class="container">
-      <span></span>Tweet or star to win a one year membership in our weekly raffle.
+      <div class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://essentialui.com" data-text="Essential UI &middot; A crafted free and premium collection of HTML, CSS and JS UI" data-via="EssentialUI" data-size="small" data-related="reardestani" data-hashtags="ui,html,css,js,free">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+       or  
+      <div class="star-btn">
+        <iframe src="https://ghbtns.com/github-btn.html?user=reardestani&repo=EssentialUI&type=star&count=true&size=small" frameborder="0" scrolling="0" width="75px" height="20px"></iframe>
+      </div> 
+      to win a one year membership in our weekly raffle.
+      <span class="glyphicon glyphicon-remove-circle btn-hide" title="Hide for 6 month"></span>
     </div>
   </div>
   <div class="container">
     <h1 class="site-title">
       <a href="{{ site.url }}/">{{ site.title }}</a>
-      <a class="btn btn-join pull-right" href="{{ site.join }}" target="_blank">Join to download all</a>
+      <a class="btn btn-join pull-right" href="{{ site.join }}" target="_blank">Join<span class="hidden-xs"> to download all</span></a>
     </h1>
     <h2 class="site-subtitle">{{ site.description }}</h2>
   </div>

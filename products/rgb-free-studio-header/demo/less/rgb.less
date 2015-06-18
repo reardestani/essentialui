@@ -1,0 +1,205 @@
+/*!
+ * RGB - Free Studio Header v1.0 (http://essentialui.com/freebies/rgb-free-studio-header)
+ * Copyright 2015 Essential UI
+ * License (http://essentialui.com/license)
+ */
+
+//
+// Load core mixins and variables
+// --------------------------------------------------
+  @import "mixins.less";
+  @import "variables.less";
+  
+  @rgb-red:     #F24545;
+  @rgb-blue:    #1784EF;
+  @rgb-purple:  #9420FF;
+  @rgb-green:   #21C7A1;
+
+/* Global
+-------------------------------------------------- */
+  .col-rm-padding {
+    padding: 0;
+  }
+
+/* RGB header 3
+-------------------------------------------------- */
+  .rgb-header {
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../img/bg.png);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .navbar-rgb {
+      padding-top: 20px;
+
+      .navbar-brand > img {
+        margin-top: -11px;
+      }
+
+      a {
+        color: #FFF;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          color: darken(#FFF, 10%);
+          color: darken(#FFF, 10%);
+        }
+      }
+
+      .dropdown-menu {
+        .border-top-radius(3px);
+        background-color: #FFF;
+
+        @media (max-width: @screen-sm) {
+          text-align: center; 
+          margin: 0 15px;
+        }  
+
+        a {
+          color: #333;
+        }
+      }
+
+      .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+        background-color: transparent;
+      }
+
+      .navbar-toggle {
+        border-color: #FFF;
+
+        > .icon-bar {
+          background-color: #FFF;
+        }
+      }
+
+      .navbar-collapse {
+        text-align: center;
+        .box-shadow(0 0 0);
+      }
+    } //.navbar-rgb
+
+    .rgb-description {
+      text-align: center;
+
+      > .carousel {
+        padding-bottom: 200px;
+
+        @media (max-width: @screen-sm) {
+          padding-bottom: 120px;
+        }  
+      }
+
+      .carousel-control {
+        background-image: none;
+        top: -60px;
+      }
+
+      h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 170px;
+
+        @media (max-width: @screen-sm) {
+          margin-top: 80px;
+          font-size: 24px;
+        }
+      }
+
+      h2 {
+        color: darken(#FFF, 30%);
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0;
+
+        @media (max-width: @screen-sm) {
+          font-size: 14px;
+        }  
+      }
+
+      .btn-rgb {
+        background-color: @rgb-red;
+        margin-top: 30px;
+        color: #FFF;
+        font-size: 18px;
+        padding: 10px 50px;
+        border-radius: 30px;
+      }
+
+    } //.rgb-description
+
+  } //.rgb-header
+
+  .rgb-features {
+    
+    .rgb-feature {
+      background-color: @rgb-blue;
+      padding: 80px 0;
+      text-align: center;
+
+      @media (max-width: @screen-sm) {
+        padding: 40px 0;
+      }
+      
+      span {
+        position: relative;
+        padding-top: 40px;
+        color: #FFF;
+        font-size: 30px;
+        .size(120px, 120px);
+        border: 3px solid #FFF;
+        border-radius: 50%;
+        .box-shadow(inset 0 0 0 8px rgba(0, 0, 0, .1));
+        .transition(top 300ms);
+
+        @media (max-width: @screen-sm) {
+          font-size: 20px;
+          padding-top: 25px;
+          .size(70px, 70px);
+          border: 1px solid #FFF;
+          .box-shadow(inset 0 0 0 4px rgba(0, 0, 0, .1));
+        }
+      }
+
+      .rgb-feature-title {
+        color: #FFF;
+        position: absolute;
+        width: 100%;
+        .opacity(0);
+        .transition(opacity 300ms);
+
+        @media (max-width: @screen-sm) {
+          font-size: 16px;
+        }
+      }
+      
+      &.two {
+        background-color: @rgb-purple;
+      }
+
+      &.three {
+        background-color: @rgb-green;
+      }
+
+      &:hover,
+      &:focus {
+        span {
+          top: -10px;
+        }
+
+        .rgb-feature-title {
+          .opacity(1);
+        }
+      }
+
+    } //.rgb-feature
+  } //.rgb-features

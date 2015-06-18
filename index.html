@@ -4,14 +4,13 @@ layout: default
 
 <main class="home" role="primary">
   <div class="container">
-    <div class="row">
+    <div class="row text-center">
       {% for post in site.posts %}
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
           <a href="{{ post.url | prepend: site.url }}" class="thumbnail">
-            <img src="{{ site.url }}/img/{{ post.slug }}/thumbnail.png" alt="post">
+            <img src="{{ site.url }}/products/{{ post.slug }}/thumbnail.jpg" width="360" Height="225" alt="{{ post.title }} Thumbnail">
             <div class="caption">
-            <h4 class="thumbnail-title">{{ post.title | xml_escape }}</h4>
-            <p class="thumbnail-subtitle">{{ post.subtitle | xml_escape }}</p>
+            <h4 class="thumbnail-title">{{ post.title }}</h4>
           </div>
           </a>
         </div>

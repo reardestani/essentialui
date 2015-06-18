@@ -1,10 +1,10 @@
 # Site settings
-title: Essential UI
-email: support@essentialui.com
-description: A crafted collection of HTML, CSS and JS UI
+title: "Essential UI"
+email: "support@essentialui.com"
+description: "A Crafted Free & Premium Collection of HTML, CSS and JS UI"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-permalink: /:categories/:title/
+permalink: /:title/
 join: "https://gum.co/essential-ui"
 
 # Build settings

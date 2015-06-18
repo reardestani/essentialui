@@ -1,0 +1,144 @@
+/*!
+ * Port - Minimal Portfolio Header v1.0 (http://essentialui.com/freebies/port-minimal-portfolio-header)
+ * Copyright 2015 Essential UI
+ * License (http://essentialui.com/license)
+ */
+
+//
+// Load core mixins and variables
+// --------------------------------------------------
+  @import "mixins.less";
+  @import "variables.less";
+
+  .transform(@props) {
+    -webkit-transform: @props;
+       -moz-transform: @props;
+        -ms-transform: @props;
+         -o-transform: @props;
+            transform: @props;
+  }
+  
+
+/* Global
+-------------------------------------------------- */
+  .col-rm-padding {
+    padding: 0;
+  }
+
+/* Port header
+-------------------------------------------------- */
+  .port-header {
+    position: relative;
+
+    .navbar-port {
+      background-color: #FFF;
+
+      .navbar-nav {
+        > li {
+          > a {
+            padding: 20px;
+          }
+          
+          &.active {
+            a {
+              background-color: #333;
+              color: #FFF;
+            }
+          }
+        }
+      } //.navbar-nav
+
+      .navbar-toggle {
+        margin: 13px;
+      }
+
+    } //.navbar-port
+
+    .navbar-brand {
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      color: #333;
+    }
+
+    .port-description {
+      padding-top: 150px;
+      text-align: center;
+
+      .container {
+        max-width: 600px;
+      }
+
+      .port-title {
+        font-size: 24px;
+
+      }
+
+      .port-subtitle {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.6;
+        color: #A0A0A0;
+      }
+    } //.port-description
+
+    .works {
+      margin-top: 20px;
+
+      > div {
+        overflow: hidden;
+        .perspective(500px);
+
+        img {
+          .transition(all 300ms);
+        }
+
+        &.opacity-effect:hover,
+        &.opacity-effect:focus {
+          img {
+            .opacity(.5);  
+          }   
+        }
+
+        &.scale-effect:hover,
+        &.scale-effect:focus {
+          img {
+            .scale(1.3);
+          }   
+        }
+
+        &.scale-rotate-effect:hover,
+        &.scale-rotate-effect:focus {
+          img {
+            .transform(rotate(10deg) scale(1.3));
+          }
+        }
+
+        &.scale-opacity-effect:hover,
+        &.scale-opacity-effect:focus {
+          img {
+            .scale(1.3);
+            .opacity(.5);
+          }
+        }
+
+        &.prespective-rotate-y-effect:hover,
+        &.prespective-rotate-y-effect:focus {
+          img {
+            .transform(rotateY(30deg) scale(1.3));
+          }
+        }
+
+        &.prespective-rotate-x-effect:hover,
+        &.prespective-rotate-x-effect:focus {
+          img {
+            .transform(rotateX(30deg) scale(1.3));
+          }
+        }
+
+      } // div
+      
+    } //.works
+
+  } //.port-header
+

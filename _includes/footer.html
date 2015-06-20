@@ -21,10 +21,15 @@
           <li><a href="github.com/reardestani/essential-ui">Github</a></li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3">
+      <div class="col-xs-4 col-sm-2 col-md-3 col-md-offset-1">
+        <h4>Downloads</h4>
+        <p>Our freebies have been downloaded about:</p>
+        <p class="total-downloads">&infin;</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-5">
         <h4>Newsletter</h3>
-        <p>Subscribe to recieve news about new products, updates and offers.</p>
-        <form class="form-inline newsletter">
+        <p class="subscription-response">Subscribe to recieve news about new products, updates and offers.</p>
+        <form class="form-inline form-newsletter">
           <div class="form-group">
             <label class="sr-only" for="newsletterEmail">Email address</label>
             <input type="email" class="form-control email" id="newsletterEmail" placeholder="Enter email" required> 
@@ -37,8 +42,8 @@
     <p class="copyright">Copyright &copy; 2015 Essential UI &middot; Crafted by <a href="http://reardestani.ir" target="_blank">Reza Ardestani</a></p>
   </div> <!-- /.container -->
 
-  <script src="{{ prepend: site.baseurl | prepend: site.url }}/js/jquery.min.js"></script>
-  <script src="{{ prepend: site.baseurl | prepend: site.url }}/js/bootstrap.min.js"></script>
+  <script src="{{ prepend: site.url }}/js/jquery.min.js"></script>
+  <script src="{{ prepend: site.url }}/js/bootstrap.min.js"></script>
 
   {% if site.url != '' %}
     <!-- Histats.com  START (hidden counter)-->

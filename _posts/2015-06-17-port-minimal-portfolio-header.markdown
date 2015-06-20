@@ -1,5 +1,6 @@
 ---
 layout: post
+ID: 21
 title:  "Port &middot; Minimal Portfolio Header"
 slug: "port-minimal-portfolio-header"
 subtitle: "A portfolio header with clean design"
@@ -10,8 +11,7 @@ tags: html, css, flat, minimal, bootstrap, less, modern, portfolio
 ---
 A creative and minimal header for your your studio website. This is responsive and includes navbar, dropdowns, carousel and colorful features section. This is based on Bootstrap.
 
-<a class="btn btn-post btn-demo btn-block" href="{{ site.url }}/products/{{ page.slug }}/demo">Demo</a>
-<a class="btn btn-post btn-download-all btn-block" href="https://gum.co/eesential-ui" target="_blank">Download all</a>
+{% include post-buttons.html %}
 
 ## Features
 

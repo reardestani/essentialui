@@ -1,30 +1,41 @@
----
-layout: default
----
-<div class="container">
-  <div class="col-sm-8 post">
-    <main role="primary">
-      <figure>
-        <img src="{{ site.url }}/products/{{ page.slug }}/preview-1.jpg" width="715" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
-        <img src="{{ site.url }}/products/{{ page.slug }}/preview-2.jpg" width="715" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
-        <img src="{{ site.url }}/products/{{ page.slug }}/preview-3.jpg" width="715" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
-        <img src="{{ site.url }}/products/{{ page.slug }}/preview-4.jpg" width="715" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
-      </figure>
-    </main>
-  </div>
-  <div class="col-sm-4 post-aside">
-    <aside rolw="complementary">
-      <h1>{{ page.title }}</h1>
-      <p class="post-category">{{ page.category }}</p>
-      {{ content }}
-      <h2>Info</h2>
-      <ul>
-        <li>{{ page.date | date: "%b %-d, %Y" }} crafted</li>
-        {% if page.date != page.update %}
-          <li>{{ page.update | date: "%b %-d, %Y" }} updated</li>
-        {% endif %}
-        <li>1200 views</li>
-      </ul>
-    </aside>
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="post" data-fn="update-views" data-id="{{ page.ID }}">
+    {% include header.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 post-content">
+          <main role="primary">
+            <figure>
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-1.jpg" width="715" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-2.jpg" width="715" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-3.jpg" width="715" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-4.jpg" width="715" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
+            </figure>
+          </main>
+        </div>
+        <div class="col-sm-4 post-aside">
+          <aside role="complementary">
+            <h1>{{ page.title }}</h1>
+            <p class="post-category">{{ page.category }}</p>
+            {{ content }}
+            <h2>Info</h2>
+            <ul>
+              <li>{{ page.date | date: "%b %-d, %Y" }} crafted</li>
+              {% if page.date != page.update %}
+                <li>{{ page.update | date: "%b %-d, %Y" }} updated</li>
+              {% endif %}
+              <li><soan class="counter-views">&infin;</soan> views</li>
+              <li><soan class="counter-downloads">&infin;</soan> downloads</li>
+              <li><soan class="counter-likes">&infin;</soan> likes</li>
+            </ul>
+          </aside>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    {% include footer.html %}
+    <script src="{{ prepend: site.url }}/js/update-statistics.js"></script>
+    <script src="{{ prepend: site.url }}/js/get-statistics.js"></script>
+  </body>
+</html>

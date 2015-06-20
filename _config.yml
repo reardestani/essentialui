@@ -5,7 +5,7 @@ description: "A Crafted Free & Premium Collection of HTML, CSS and JS UI"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 permalink: /:title/
-join: "https://gum.co/essential-ui"
+join: "https://gum.co/EssentialUI"
 
 # Build settings
 markdown: kramdown

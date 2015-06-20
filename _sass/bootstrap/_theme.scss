@@ -28,6 +28,16 @@
     }
   }
 
+  .btn {
+
+    &:focus, 
+    &:hover, 
+    &:active,
+    &:focus:active {
+      outline: 0;
+    }
+  }
+
 //
 // Site header
 // --------------------------------------------------
@@ -101,10 +111,7 @@
     margin: -8px 0;
 
     &:focus, 
-    &:hover, 
-    &:active,
-    &:focus:active {
-      outline: 0;
+    &:hover {
       color: #FFF;
     }
   }
@@ -192,7 +199,7 @@
       }
 
   // Post
-    .post {
+    .post-content {
       padding-top: 30px;
       @media ( min-width: $screen-sm ) {
        padding-right: 30px;
@@ -237,7 +244,21 @@
         color: #BDBCBC;
       }
 
-      .btn-post {
+      .btn-group-justified {
+        margin-top: 20px;
+        border: 1px solid #CCC;
+        border-radius: 3px;
+
+         .btn {
+          border-width: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-weight: 500;
+          border-radius: 3px;
+        }
+      }
+
+      .btn-download-all {
         background-color: $eui-red;
         color: #FFF;
         padding: 10px 30px;
@@ -246,23 +267,8 @@
         margin-top: 10px;
 
         &:focus, 
-        &:hover, 
-        &:active,
-        &:focus:active {
-          outline: 0;
+        &:hover {
           color: #FFF;
-        }
-
-        &.btn-demo {
-          margin-top: 20px;
-        }
-
-        &.btn-download-all {
-          background-color: #55ACEE;
-        }
-
-        &.btn-download {
-          background-color: #52D39D;
         }
       }
 
@@ -355,6 +361,11 @@
     border-radius: 3px;
     font-weight: bold;
     padding: 10px 20px;
+  }
+
+  .total-downloads {
+    font-size: 40px;
+    font-weight: 200;
   }
 
   .copyright {

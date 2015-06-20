@@ -16,15 +16,15 @@
   <div class="container">
     <h1 class="site-title">
       <a href="{{ site.url }}/">{{ site.title }}</a>
-      <a class="btn btn-join pull-right" href="{{ site.join }}" target="_blank">Join<span class="hidden-xs"> to download all</span></a>
+      <a class="btn btn-join pull-right" href="{{ site.join }}" data-id="1" data-fn="update-clicks" target="_blank">Join<span class="hidden-xs"> to download all</span></a>
     </h1>
     <h2 class="site-subtitle">{{ site.description }}</h2>
   </div>
   <nav class="navbar navbar-call-to-join navbar-fixed-top" data-spy="affix" data-offset-top="160">
     <div class="container">
       <p class="hidden-xs">Access to all products for only $3 &rarr;</p>
-      <a class="btn btn-join navbar-btn navbar-right hidden-xs" href="{{ site.join }}" target="_blank">Join now</a>
-      <a class="btn btn-join navbar-btn btn-block visible-xs" href="{{ site.join }}" target="_blank">Join now for $3</a>
+      <a class="btn btn-join navbar-btn navbar-right hidden-xs" href="{{ site.join }}" data-id="2" data-fn="update-clicks" target="_blank">Join now</a>
+      <a class="btn btn-join navbar-btn btn-block visible-xs" href="{{ site.join }}" data-id="3" data-fn="update-clicks" target="_blank">Join now for $3</a>
     </div>
   </nav>
   

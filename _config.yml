@@ -1,7 +1,7 @@
 # Site settings
 title: "Essential UI"
 email: "support@essentialui.com"
-description: "Handcrafted free & premium web resources"
+description: "Handcrafted free and premium web resources"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 permalink: /:title/

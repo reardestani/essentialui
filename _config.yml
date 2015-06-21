@@ -5,7 +5,7 @@ description: "Handcrafted free & premium web resources"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://essentialui.com" # the base hostname & protocol for your site
 permalink: /:title/
-join: "https://gum.co/EssentialUI"
+join: "https://gum.co/eui-membership"
 
 # Build settings
 markdown: kramdown

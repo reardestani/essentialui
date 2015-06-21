@@ -27,7 +27,9 @@
                 <li>{{ page.update | date: "%b %-d, %Y" }} updated</li>
               {% endif %}
               <li><soan class="counter-views">&infin;</soan> views</li>
-              <li><soan class="counter-downloads">&infin;</soan> downloads</li>
+              {% if page.category == "freebie" %}
+                <li><soan class="counter-downloads">&infin;</soan> downloads</li>
+              {% endif %}
               <li><soan class="counter-likes">&infin;</soan> likes</li>
             </ul>
           </aside>

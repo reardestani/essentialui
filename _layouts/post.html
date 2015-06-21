@@ -8,10 +8,10 @@
         <div class="col-sm-8 post-content">
           <main role="primary">
             <figure>
-              <img src="{{ site.url }}/products/{{ page.slug }}/preview-1.jpg" width="715" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
-              <img src="{{ site.url }}/products/{{ page.slug }}/preview-2.jpg" width="715" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
-              <img src="{{ site.url }}/products/{{ page.slug }}/preview-3.jpg" width="715" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
-              <img src="{{ site.url }}/products/{{ page.slug }}/preview-4.jpg" width="715" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-1.jpg" width="730" alt="{{ page.title }} thumbnail 1" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-2.jpg" width="730" alt="{{ page.title }} thumbnail 2" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-3.jpg" width="730" alt="{{ page.title }} thumbnail 3" class="img-thumbnail">
+              <img src="{{ site.url }}/products/{{ page.slug }}/preview-4.jpg" width="730" alt="{{ page.title }} thumbnail 4" class="img-thumbnail">
             </figure>
           </main>
         </div>
@@ -35,7 +35,9 @@
       </div> <!-- /.row -->
     </div> <!-- /.container -->
     {% include footer.html %}
-    <script src="{{ prepend: site.url }}/js/update-statistics.js"></script>
-    <script src="{{ prepend: site.url }}/js/get-statistics.js"></script>
+    {% if site.url != '' %}
+      <script src="{{ prepend: site.url }}/js/update-statistics.min.js"></script>
+      <script src="{{ prepend: site.url }}/js/get-statistics.min.js"></script>
+    {% endif %}
   </body>
 </html>

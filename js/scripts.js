@@ -58,11 +58,11 @@
      
         success: function( responce ) {
           if (responce.status === 'success') {
-            $('.form-group').addClass('has-success');
+            $('.form-group').addClass('has-success').removeClass('has-error');
             $form.find( "input[type='email']" ).val(" ");
             $('.subscription-response').text('Thanks for subscribing to our website. You will be notified of new products and news.');
           } else {
-            $('.form-group').addClass('has-error');
+            $('.form-group').addClass('has-error').removeClass('has-success');
             $('.subscription-response').text('Due to our validation, your email address in not valid. Provide another one or check yours again, please.');
           }
         }, // success

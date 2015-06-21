@@ -5,8 +5,10 @@
   <div class="btn-group" role="group">
     <button type="button" class="btn btn-default btn-like" data-id="{{ page.ID }}" data-fn="update-likes">Like me</button>
   </div>
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-download" data-href="{{ site.url }}/products/{{ page.slug }}/{{ page.slug }}.zip" data-id="{{ page.ID }}" data-fn="update-downloads">Download</button>
-  </div>
+  {% if page.category == "freebie" %}
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default btn-download" data-href="{{ site.url }}/products/{{ page.slug }}/{{ page.slug }}.zip" data-id="{{ page.ID }}" data-fn="update-downloads">Download</button>
+    </div>
+  {% endif %}
 </div>
 <a class="btn btn-post btn-download-all btn-block" href="{{ site.join }}" data-fn="update-download-all" data-id="{{ page.ID }}" target="_blank">Download all</a>

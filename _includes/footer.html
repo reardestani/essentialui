@@ -41,9 +41,15 @@
     <hr>
     <p class="copyright">Copyright &copy; 2015 Essential UI &middot; Crafted by <a href="http://reardestani.ir" target="_blank">Reza Ardestani</a></p>
   </div> <!-- /.container -->
-
-  <script src="{{ prepend: site.url }}/js/jquery.min.js"></script>
+  
+  {% if site.url == '' %}
+    <script src="{{ prepend: site.url }}/js/jquery.min.js"></script>
+  {% else %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  {% endif %}
   <script src="{{ prepend: site.url }}/js/bootstrap.min.js"></script>
+  <script src="{{ prepend: site.url }}/js/scripts.min.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
   {% if site.url != '' %}
     <!-- Histats.com  START (hidden counter)-->
